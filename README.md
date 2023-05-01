@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+Sure, here's a modified README for your React.js solution to the Interactive Rating Component challenge from Frontend Mentor:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Interactive Rating Component
 
-## Available Scripts
+This is a solution to the Interactive Rating Component challenge on Frontend Mentor. It's built with React.js and CSS.
 
-In the project directory, you can run:
+## Challenge Description
 
-### `npm start`
+The challenge was to build an interactive rating component where users can hover over the stars to see the rating value, and click on a star to set the rating. The design included a different color for each rating level and a reset button.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Solution Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I used React.js to build the component, with CSS for styling. The component consists of a parent container with five child star elements that change color on hover and on click. I added state to keep track of the current rating and used props to pass the rating color to the stars. The reset button sets the rating back to zero.
 
-### `npm test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the app, clone this repository and navigate to the project directory in your terminal. Then run:
 
-### `npm run build`
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once the installation is complete, run:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This will start the development server and open the app in your browser.
 
-### `npm run eject`
+## Live Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can view a live demo of the solution at [https://vaqueraoscar0.github.io/frontendmentor.io-RatingComponent/](https://vaqueraoscar0.github.io/frontendmentor.io-RatingComponent/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot 1](src/images/Project1.png)
+![Screenshot 2](src/images/Project2.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Acknowledgements
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks to Frontend Mentor for providing the challenge and design.

@@ -1,38 +1,115 @@
+html, #root, body, .App{
+  height: 100%;
+  background: #0e0d0d;
+}
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.rSubmitTitle{
+  text-align: center;
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+.ratingResult{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratingResult h2{
+  text-align: center;
+  font-size: 12px;
+  color: #FC7614;
+  background: #272E37;
+  border-radius: 18px;
+  width: 200px;
+  padding: 10px;
+}
+
+.Rating p{
+  text-align: left;
+}
+
+.ratingBox{
+  width: 300px;
+  height: 300px;
+  padding: 40px;
+  background: #1C222D;
+  border-radius: 20px;
+}
+
+.ratingBox h1{
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+.ratingBox p{
+  color: #818991;
+  font-size: 14px;
+}
+
+.starImage{
+  width: 20px;
+  height: 20px;
+  background: #303a42;
+  border-radius: 100%;
+  padding: 7px;
+  margin-bottom: 8px;
+}
+
+.imgBlock{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Rating{
+}
+
+.buttonLine{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.roundButton{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #272E37;
+  border: #272E37;
+  color: #b2b2b2;
+  cursor: pointer;
+}
+
+.roundButton:hover{
+  background: whitesmoke;
+}
+
+
+.roundButton:focus{
+  background: #FC7614;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.submitButton{
+  margin-top: 35px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  border: #FC7614;
+  background: #FC7614;
+  color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submitButton:hover{
+  background: whitesmoke;
+  color: #FC7614;
 }
+

@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import RatingFeedbackComponent from "./Components/RatingFeedbackComponent";
+import RatingComponent from "./Components/RatingComponent";
+import {useState} from 'react'
 import './App.css';
 
 function App() {
+  const [isSubmit, setIsSubmit] = useState(true)
+  const [rating, setRating] = useState()
+
+  const handleSubmit = (value) =>{
+    setRating(value)
+    setIsSubmit(!isSubmit)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <div className={'ratingBox'}>
+          {
+            isSubmit? ( <RatingComponent handleSubmit={handleSubmit} /> ): (<RatingFeedbackComponent ratingValue={rating}/>)
+          }
+        </div>
+      </div>
   );
 }
 
