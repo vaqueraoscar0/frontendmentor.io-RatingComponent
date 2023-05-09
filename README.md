@@ -1,5 +1,3 @@
-Sure, here's a modified README for your React.js solution to the Interactive Rating Component challenge from Frontend Mentor:
-
 # Interactive Rating Component
 
 This is a solution to the Interactive Rating Component challenge on Frontend Mentor. It's built with React.js and CSS.
